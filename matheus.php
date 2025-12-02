@@ -9,9 +9,14 @@
     <h1>Você está na página PHP!</h1>
 
     <p>
-        👉 Clique abaixo para voltar à página inicial:
+        <a href="index.html">Voltar para o início</a>
     </p>
+    
+    <?php
+        date_default_timezone_set('America/Sao_Paulo');
+        echo "Hoje é " . date("d/m/Y") . " e agora são " . date("H:i:s");
+    ?>
 
-    <a href="index.html">Voltar para o início</a>
+
 </body>
 </html>
