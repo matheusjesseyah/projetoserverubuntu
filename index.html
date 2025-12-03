@@ -10,7 +10,19 @@
 <style>
 
     body{
-        background-color: rgb(250, 246, 233);
+        background-color: rgb(255, 255, 255);
+        background-image: url("images/tux.png");
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+
+    .body-content{
+        background-color: rgba(176, 201, 233, 0.795);
+        border-radius: 20px;
+        width: 80%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 25px 30px;
     }
 
     h3{
@@ -21,12 +33,19 @@
         margin-bottom: 5px;
     }
 
+    h4{
+        color: rgb(18, 26, 139);
+        font-family: verdana;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
     .title{
-        color: brown;
+        color: rgb(47, 46, 116);
         font-family: verdana;
         text-align: center;
         font-size: 15px;
-        margin-bottom: -20px;
+        
     }
 
     img{
@@ -37,7 +56,7 @@
 
     a{
         text-decoration: none;
-        color: brown;
+        color: rgb(47, 46, 116);
     }
 
     #imgRobson{
@@ -52,11 +71,36 @@
         text-align: center;
     }
 
+    .ubuntu-server{
+        background-color: rgba(92, 136, 230, 0.5);
+        border-radius: 20px;
+        width: 80%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px 30px;
+        text-align: left;     
+
+    }
+
+    .ubuntu-server-txt{
+        color: rgb(47, 46, 116);
+        font-family: verdana;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .image-conf{
+        width: 400px;
+        height: 250px;
+        border-radius: 20px;
+    }
+
     
 </style>
 
 <body>
 
+    <section class="body-content">
     <section class="title">
         <div class="title-text">
             <h3>Ubuntu Server</h3>
@@ -73,15 +117,41 @@
             </a>
         </div>
 
-        <section class="pagePhp">
+        <div class="pagePhp">
             <p>
                 Clique no link para acessar a página PHP: <a href="matheus.php">Página PHP do Matheus</a>
             </p>
-            
+        </div>
+    </section>
+
+        
+
+        <section class="ubuntu-server">
+            <h4>Sobre o Ubuntu Server</h4>
+            <div></div>
+            <p class="ubuntu-server-txt">
+                O Ubuntu Server é um sistema operacional baseado em Linux amplamente utilizado em servidores pela sua estabilidade, segurança e facilidade de administração. Durante o curso, aprendemos a instalar e configurar o Ubuntu Server em uma máquina virtual, compreender sua estrutura de diretórios, trabalhar com serviços essenciais e realizar tarefas administrativas básicas. <br>
+                Entre os conteúdos estudados, estão: <br>
+            </p>
+            <ul class="ubuntu-server-txt">
+                <li>Criação e gerenciamento de usuários</li>
+                <li>Configuração de serviços web</li>
+                <li>Utilização do Git</li>
+                <li>Rotina de administração</li>
+            </ul>
+            <p class="ubuntu-server-txt">
+                Esse aprendizado forma a base para administrar servidores Linux em ambiente profissional, garantindo que aplicações e páginas web funcionem de forma estável, organizada e segura.
+            </p>
         </section>
+
+        <section>
+            <img src="/images/linux-server.jpg" alt="" class="image-conf">
+        </section>
+
+    </section>
       
         
-    </section>
+    
     
     
 </body>
